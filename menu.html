@@ -1,83 +1,346 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
     <title>Menu - Aura Coffee Roasters</title>
+
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+
+<body class="page-layout">
+
     <header id="main-header">
+
         <div class="container nav-container">
-            <div class="logo">Aura Coffee</div>
+
+            <a href="index.html" class="logo">
+                Aura Coffee
+            </a>
+
             <nav class="nav-menu">
                 <a href="index.html">Home</a>
-                <a href="menu.html" class="active">Menu</a>
+
+                <a href="menu.html" class="active">
+                    Menu
+                </a>
+
                 <a href="about.html">About Us</a>
+
                 <a href="contact.html">Contact Us</a>
             </nav>
+
         </div>
+
     </header>
 
-    <main class="container">
-        <section class="menu-intro">
+    <aside class="sidebar">
+
+        <h2>Quick Menu</h2>
+
+        <ul class="sidebar-list">
+
+            <li>
+                <a href="#favorites">
+                    Customer Favorites
+                </a>
+            </li>
+
+            <li>
+                <a href="#prices">
+                    Coffee Pricing
+                </a>
+            </li>
+
+            <li>
+                <a href="#gallery">
+                    Coffee Gallery
+                </a>
+            </li>
+
+        </ul>
+
+        <p>
+            All drinks are prepared with 100% Arabica beans.
+        </p>
+
+    </aside>
+
+    <main>
+
+        <section class="menu-intro section-block">
+
+            <p class="eyebrow">
+                Fresh coffee every day
+            </p>
+
             <h1>Our Menu</h1>
-            <p>From classic espresso beverages to seasonal specials, we have something to satisfy every craving. We use 100% Arabica beans.</p>
-            <img src="images/latte-art.jpg" alt="A barista pouring perfect latte art" class="feature-img">
+
+            <p>
+                From classic espresso beverages to seasonal specials,
+                we have something to satisfy every craving.
+                We use 100% Arabica beans.
+            </p>
+
+            <img
+                src="images/latte-art.jpg"
+                alt="A barista pouring perfect latte art"
+                class="feature-img"
+            >
+
         </section>
 
-        <section class="top-sellers">
+        <section
+            class="top-sellers section-block"
+            id="favorites"
+        >
+
             <h2>Customer Favorites</h2>
+
             <ol class="sellers-list">
-                <li><strong>Salted Caramel Latte</strong> - Our signature homemade caramel sauce.</li>
-                <li><strong>V60 Pour Over</strong> - For those who appreciate the pure, delicate notes of single-origin coffee.</li>
-                <li><strong>Matcha Green Tea</strong> - Premium ceremonial grade matcha directly from Japan.</li>
+
+                <li>
+                    <strong>Salted Caramel Latte</strong> -
+                    Our signature homemade caramel sauce.
+                </li>
+
+                <li>
+                    <strong>V60 Pour Over</strong> -
+                    For those who appreciate the pure and delicate
+                    notes of single-origin coffee.
+                </li>
+
+                <li>
+                    <strong>Matcha Green Tea</strong> -
+                    Premium ceremonial grade matcha directly
+                    from Japan.
+                </li>
+
             </ol>
+
         </section>
 
-        <section class="menu-table-section">
+        <section
+            class="menu-table-section section-block"
+            id="prices"
+        >
+
             <h2>Coffee Pricing</h2>
-            <table class="menu-table">
-                <thead>
-                    <tr>
-                        <th>Beverage</th>
-                        <th>Standard (250ml)</th>
-                        <th>Large (400ml)</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Espresso / Double Espresso</td>
-                        <td>800 ₸</td>
-                        <td>1200 ₸</td>
-                    </tr>
-                    <tr>
-                        <td>Americano</td>
-                        <td>1100 ₸</td>
-                        <td>1400 ₸</td>
-                    </tr>
-                    <tr>
-                        <td>Cappuccino</td>
-                        <td>1400 ₸</td>
-                        <td>1700 ₸</td>
-                    </tr>
-                    <tr>
-                        <td>Latte</td>
-                        <td>1500 ₸</td>
-                        <td>1800 ₸</td>
-                    </tr>
-                    <tr>
-                        <td>Flat White</td>
-                        <td>1600 ₸ (200ml)</td>
-                        <td>-</td>
-                    </tr>
-                </tbody>
-            </table>
+
+            <div class="table-wrapper">
+
+                <table class="menu-table">
+
+                    <thead>
+
+                        <tr>
+                            <th>Beverage</th>
+                            <th>Standard (250ml)</th>
+                            <th>Large (400ml)</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>Espresso / Double Espresso</td>
+                            <td>900 ₸</td>
+                            <td>1200 ₸</td>
+                        </tr>
+
+                        <tr>
+                            <td>Americano</td>
+                            <td>1100 ₸</td>
+                            <td>1400 ₸</td>
+                        </tr>
+
+                        <tr>
+                            <td>Cappuccino</td>
+                            <td>1400 ₸</td>
+                            <td>1700 ₸</td>
+                        </tr>
+
+                        <tr>
+                            <td>Latte</td>
+                            <td>1500 ₸</td>
+                            <td>1800 ₸</td>
+                        </tr>
+
+                        <tr>
+                            <td>Flat White</td>
+                            <td>1600 ₸ (200ml)</td>
+                            <td>-</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
         </section>
+
+        <section
+            class="gallery-section section-block"
+            id="gallery"
+        >
+
+            <div class="section-heading">
+
+                <p class="eyebrow">
+                    Inside Aura
+                </p>
+
+                <h2>Coffee Gallery</h2>
+
+                <p>
+                    Move your mouse over an image to see its caption.
+                </p>
+
+            </div>
+
+            <div class="image-gallery">
+
+                <figure class="gallery-item">
+
+                    <img
+                        src="images/gallery-espresso.jpg"
+                        alt="Fresh classic espresso"
+                    >
+
+                    <figcaption>
+                        Classic Espresso
+                    </figcaption>
+
+                </figure>
+
+                <figure class="gallery-item">
+
+                    <img
+                        src="images/gallery-cappuccino.jpg"
+                        alt="Cappuccino with latte art"
+                    >
+
+                    <figcaption>
+                        Soft Cappuccino
+                    </figcaption>
+
+                </figure>
+
+                <figure class="gallery-item">
+
+                    <img
+                        src="images/gallery-flat-white.jpg"
+                        alt="Fresh flat white coffee"
+                    >
+
+                    <figcaption>
+                        Flat White
+                    </figcaption>
+
+                </figure>
+
+                <figure class="gallery-item">
+
+                    <img
+                        src="images/gallery-v60.jpg"
+                        alt="V60 coffee brewing process"
+                    >
+
+                    <figcaption>
+                        V60 Brewing
+                    </figcaption>
+
+                </figure>
+
+                <figure class="gallery-item">
+
+                    <img
+                        src="images/gallery-cold-brew.jpg"
+                        alt="Cold brew coffee with ice"
+                    >
+
+                    <figcaption>
+                        Cold Brew
+                    </figcaption>
+
+                </figure>
+
+                <figure class="gallery-item">
+
+                    <img
+                        src="images/gallery-dessert.jpg"
+                        alt="Coffee with a fresh dessert"
+                    >
+
+                    <figcaption>
+                        Coffee and Dessert
+                    </figcaption>
+
+                </figure>
+
+                <figure class="gallery-item">
+
+                    <img
+                        src="images/gallery-beans.jpg"
+                        alt="Fresh roasted coffee beans"
+                    >
+
+                    <figcaption>
+                        Specialty Beans
+                    </figcaption>
+
+                </figure>
+
+                <figure class="gallery-item">
+
+                    <img
+                        src="images/gallery-barista.jpg"
+                        alt="Barista preparing coffee"
+                    >
+
+                    <figcaption>
+                        Barista at Work
+                    </figcaption>
+
+                </figure>
+
+                <figure class="gallery-item">
+
+                    <img
+                        src="images/gallery-matcha.jpg"
+                        alt="Green matcha latte with latte art"
+                    >
+
+                    <figcaption>
+                        Premium Matcha Latte
+                    </figcaption>
+
+                </figure>
+
+            </div>
+
+        </section>
+
     </main>
 
     <footer>
-        <p>&copy; 2026 Aura Coffee Roasters. Team Members: Shalabay Madi, Ibragim Yerkhan | Group: SE-2510</p>
+
+        <p>
+            &copy; 2026 Aura Coffee Roasters.
+            Team Members: Shalabay Madi, Ibragim Yerkhan |
+            Group: SE-2510
+        </p>
+
     </footer>
+
 </body>
+
 </html>

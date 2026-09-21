@@ -6,10 +6,13 @@
     <title>About Us - Aura Coffee Roasters</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+
+<body class="page-layout">
+
     <header id="main-header">
         <div class="container nav-container">
-            <div class="logo">Aura Coffee</div>
+            <a href="index.html" class="logo">Aura Coffee</a>
+
             <nav class="nav-menu">
                 <a href="index.html">Home</a>
                 <a href="menu.html">Menu</a>
@@ -19,36 +22,113 @@
         </div>
     </header>
 
-    <main class="container">
-        <section class="story-section">
+    <aside class="sidebar">
+        <h2>Our Values</h2>
+
+        <ul class="sidebar-list">
+            <li>Fresh local roasting</li>
+            <li>Ethically sourced beans</li>
+            <li>Friendly service</li>
+            <li>Student community</li>
+        </ul>
+
+        <a href="menu.html" class="sidebar-link">
+            Taste our coffee
+        </a>
+    </aside>
+
+    <main>
+
+        <section class="story-section section-block">
+            <p class="eyebrow">From students to roasters</p>
+
             <h1>Our Story</h1>
-            <img src="images/roastery.jpg" alt="Fresh coffee beans in a roasting machine" class="feature-img">
-            <p>Aura Coffee Roasters was born out of a late-night study session. As university students navigating through complex coding assignments, we realized how crucial a good cup of coffee was. Disappointed by the lack of authentic, specialty coffee shops near our campus in Astana, we decided to learn the art of roasting ourselves.</p>
-            <p>Today, Aura is more than just a cafe. It's a community hub where ideas are born, friendships are forged, and every cup is crafted with precision and passion.</p>
+
+            <img
+                src="images/roastery.jpg"
+                alt="Fresh coffee beans in a roasting machine"
+                class="feature-img"
+            >
+
+            <p>
+                Aura Coffee Roasters was born out of a late-night study
+                session. As university students navigating through complex
+                coding assignments, we realized how crucial a good cup of
+                coffee was. Disappointed by the lack of authentic, specialty
+                coffee shops near our campus in Astana, we decided to learn
+                the art of roasting ourselves.
+            </p>
+
+            <p>
+                Today, Aura is more than just a cafe. It's a community hub
+                where ideas are born, friendships are forged, and every cup
+                is crafted with precision and passion.
+            </p>
         </section>
 
-        <section class="team-section">
-            <h2>About the Team Members</h2>
-            <div class="team-grid">
-                <div class="team-card">
-                    <img src="images/madi.jpg" alt="Portrait of Shalabay Madi" class="profile-img">
-                    <h3>Shalabay Madi</h3>
-                    <p class="role">Co-Founder & Head Roaster</p>
-                    <p>Madi approaches coffee roasting like writing perfect code — it requires patience, precise temperatures, and constant testing. He sources all our beans directly from ethical farms.</p>
-                </div>
+        <section class="team-section section-block">
 
-                <div class="team-card">
-                    <img src="images/yerkhan.jpg" alt="Portrait of Ibragim Yerkhan" class="profile-img">
+            <div class="section-heading">
+                <p class="eyebrow">The people behind Aura</p>
+                <h2>About the Team Members</h2>
+            </div>
+
+            <div class="team-grid">
+
+                <article class="team-card">
+                    <img
+                        src="images/madi.jpg"
+                        alt="Portrait of Shalabay Madi"
+                        class="profile-img"
+                    >
+
+                    <h3>Shalabay Madi</h3>
+
+                    <p class="role">
+                        Co-Founder &amp; Head Roaster
+                    </p>
+
+                    <p>
+                        Madi approaches coffee roasting like writing perfect
+                        code - it requires patience, precise temperatures,
+                        and constant testing. He sources all our beans
+                        directly from ethical farms.
+                    </p>
+                </article>
+
+                <article class="team-card">
+                    <img
+                        src="images/yerkhan.jpg"
+                        alt="Portrait of Ibragim Yerkhan"
+                        class="profile-img"
+                    >
+
                     <h3>Ibragim Yerkhan</h3>
-                    <p class="role">Co-Founder & Chief Barista</p>
-                    <p>Yerkhan ensures the quality of every beverage that crosses the counter. A master of latte art and customer experience, he makes sure everyone leaves with a smile.</p>
-                </div>
+
+                    <p class="role">
+                        Co-Founder &amp; Chief Barista
+                    </p>
+
+                    <p>
+                        Yerkhan ensures the quality of every beverage that
+                        crosses the counter. A master of latte art and
+                        customer experience, he makes sure everyone leaves
+                        with a smile.
+                    </p>
+                </article>
+
             </div>
         </section>
+
     </main>
 
     <footer>
-        <p>&copy; 2026 Aura Coffee Roasters. Team Members: Shalabay Madi, Ibragim Yerkhan | Group: SE-2510</p>
+        <p>
+            &copy; 2026 Aura Coffee Roasters.
+            Team Members: Shalabay Madi, Ibragim Yerkhan |
+            Group: SE-2510
+        </p>
     </footer>
+
 </body>
 </html>

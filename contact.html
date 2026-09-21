@@ -6,10 +6,13 @@
     <title>Contact Us - Aura Coffee Roasters</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+
+<body class="page-layout">
+
     <header id="main-header">
         <div class="container nav-container">
-            <div class="logo">Aura Coffee</div>
+            <a href="index.html" class="logo">Aura Coffee</a>
+
             <nav class="nav-menu">
                 <a href="index.html">Home</a>
                 <a href="menu.html">Menu</a>
@@ -19,54 +22,140 @@
         </div>
     </header>
 
-    <main class="container contact-container">
-        <section class="contact-info">
+    <aside class="sidebar">
+        <h2>Contact Details</h2>
+
+        <p>
+            <strong>Address</strong><br>
+            Mangilik El Ave<br>
+            Astana, Kazakhstan
+        </p>
+
+        <p>
+            <strong>Email</strong><br>
+            hello@auracoffee.kz
+        </p>
+
+        <p>
+            <strong>Hours</strong><br>
+            8:00 AM - 10:00 PM
+        </p>
+    </aside>
+
+    <main class="contact-container">
+
+        <section class="contact-info section-block">
+            <p class="eyebrow">Come say hello</p>
+
             <h1>Get in Touch</h1>
-            <p>We'd love to hear from you! Whether you want to reserve a table for a meeting or just give us feedback on your recent visit.</p>
-            <img src="images/shop-exterior.jpg" alt="Exterior view of Aura Coffee shop" class="feature-img">
-            
+
+            <p>
+                We'd love to hear from you! Whether you want to reserve
+                a table for a meeting or just give us feedback on your
+                recent visit.
+            </p>
+
+            <img
+                src="images/shop-exterior.jpg"
+                alt="Exterior view of Aura Coffee shop"
+                class="feature-img"
+            >
+
             <div class="address-block">
-                <h3>Location & Hours</h3>
-                <p><strong>Address:</strong> Mangilik El Ave, Astana, Kazakhstan</p>
-                <p><strong>Hours:</strong> Mon-Sun: 8:00 AM - 10:00 PM</p>
-                <p><strong>Email:</strong> hello@auracoffee.kz</p>
+                <h3>Location &amp; Hours</h3>
+
+                <p>
+                    <strong>Address:</strong>
+                    Mangilik El Ave, Astana, Kazakhstan
+                </p>
+
+                <p>
+                    <strong>Hours:</strong>
+                    Mon-Sun: 8:00 AM - 10:00 PM
+                </p>
+
+                <p>
+                    <strong>Email:</strong>
+                    hello@auracoffee.kz
+                </p>
             </div>
         </section>
 
-        <section class="contact-form-section">
+        <section class="contact-form-section section-block">
             <h2>Send us a Message</h2>
+
             <form id="contact-form" action="#" method="get">
+
                 <div class="form-group">
                     <label for="name">Your Name:</label>
-                    <input type="text" id="name" name="name" placeholder="John Doe" required>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="John Doe"
+                        required
+                    >
                 </div>
 
                 <div class="form-group">
                     <label for="email">Email Address:</label>
-                    <input type="email" id="email" name="email" placeholder="john@example.com" required>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="john@example.com"
+                        required
+                    >
                 </div>
 
                 <div class="form-group">
                     <label for="inquiry-type">How can we help?</label>
+
                     <select id="inquiry-type" name="inquiry-type">
-                        <option value="reservation">Table Reservation</option>
-                        <option value="feedback">General Feedback</option>
-                        <option value="business">Business / Catering</option>
+                        <option value="reservation">
+                            Table Reservation
+                        </option>
+
+                        <option value="feedback">
+                            General Feedback
+                        </option>
+
+                        <option value="business">
+                            Business / Catering
+                        </option>
                     </select>
                 </div>
 
                 <div class="form-group">
                     <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="6" placeholder="Type your message here..." required></textarea>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="6"
+                        placeholder="Type your message here..."
+                        required
+                    ></textarea>
                 </div>
 
-                <button type="submit" class="btn-primary">Send Message</button>
+                <button type="submit" class="btn-primary">
+                    Send Message
+                </button>
+
             </form>
         </section>
+
     </main>
 
     <footer>
-        <p>&copy; 2026 Aura Coffee Roasters. Team Members: Shalabay Madi, Ibragim Yerkhan | Group: SE-2510</p>
+        <p>
+            &copy; 2026 Aura Coffee Roasters.
+            Team Members: Shalabay Madi, Ibragim Yerkhan |
+            Group: SE-2510
+        </p>
     </footer>
+
 </body>
 </html>
