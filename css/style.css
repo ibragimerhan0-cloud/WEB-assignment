@@ -26,15 +26,6 @@ h3 {
     margin-bottom: 15px;
 }
 
-h1 {
-    font-size: 2.6rem;
-}
-
-p {
-    margin-top: 0;
-    margin-bottom: 20px;
-}
-
 a {
     color: inherit;
     text-decoration: none;
@@ -45,743 +36,265 @@ img {
     max-width: 100%;
 }
 
-ul,
-ol {
-    margin-top: 0;
-    margin-bottom: 25px;
-    padding-left: 20px;
+
+/* ---------- Responsive typography ---------- */
+
+h1 {
+    font-size: 2rem;
 }
 
-li {
-    margin-bottom: 10px;
+h2 {
+    font-size: 1.5rem;
 }
 
-.container {
-    width: min(1100px, 100% - 40px);
-    margin: 0 auto;
+p {
+    font-size: 1rem;
 }
 
-.section-block {
-    margin-bottom: 55px;
+@media (min-width: 768px) {
+    h1 {
+        font-size: 2.3rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-size: 1.05rem;
+    }
 }
 
-.section-heading {
-    margin-bottom: 24px;
+@media (min-width: 992px) {
+    h1 {
+        font-size: 2.6rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+    }
 }
 
-.eyebrow {
-    color: #A66C36;
-    font-size: 0.78rem;
-    font-weight: 700;
-    letter-spacing: 0.14em;
-    margin-bottom: 8px;
-    text-transform: uppercase;
-}
 
+/* ---------- Navigation bar ---------- */
 
-/* ---------- Grid Areas page layout ---------- */
-
-.page-layout {
-    min-height: 100vh;
-
-    display: grid;
-
-    grid-template-columns:
-        minmax(210px, 260px)
-        minmax(0, 1fr);
-
-    grid-template-rows:
-        auto
-        1fr
-        auto;
-
-    grid-template-areas:
-        "header header"
-        "sidebar main"
-        "footer footer";
-}
-
-#main-header {
-    grid-area: header;
-
+.navbar-custom {
     background-color: #FFFFFF;
-
-    box-shadow:
-        0 2px 10px
-        rgba(44, 30, 22, 0.08);
-
-    position: sticky;
-    top: 0;
-    z-index: 100;
+    box-shadow: 0 2px 10px rgba(44, 30, 22, 0.08);
 }
 
-.sidebar {
-    grid-area: sidebar;
-
-    background-color: #EFE5D7;
-
-    border-right:
-        1px solid #E0D2C1;
-
-    padding: 45px 28px;
-}
-
-.page-layout > main {
-    grid-area: main;
-
-    width: min(100%, 1120px);
-
-    padding: 45px;
-}
-
-footer {
-    grid-area: footer;
-
-    background-color: #2C1E16;
-    color: #FFFFFF;
-
-    text-align: center;
-
-    padding: 22px 20px;
-}
-
-footer p {
-    margin: 0;
-}
-
-
-/* ---------- Flexbox navigation ---------- */
-
-.nav-container {
-    min-height: 76px;
-
-    display: flex;
-
-    justify-content: space-between;
-    align-items: center;
-
-    gap: 35px;
-}
-
-.logo {
-    color: #C48B54;
-
-    font-family:
-        Georgia,
-        "Times New Roman",
-        serif;
-
+.navbar-custom .navbar-brand {
+    color: #9C6C3E;
+    font-family: Georgia, "Times New Roman", serif;
     font-size: 1.55rem;
     font-weight: 700;
-
-    white-space: nowrap;
 }
 
-.nav-menu {
-    display: flex;
-
-    align-items: center;
-    justify-content: flex-end;
-
-    gap: 28px;
-}
-
-.nav-menu a {
-    border-bottom:
-        2px solid transparent;
-
+.navbar-custom .nav-link {
     font-weight: 600;
-
-    padding: 8px 0 6px;
-
-    transition:
-        color 0.3s ease,
-        border-color 0.3s ease;
+    color: #2C1E16;
+    border-bottom: 2px solid transparent;
+    transition: color 0.3s ease, border-color 0.3s ease;
 }
 
-.nav-menu a:hover,
-.nav-menu a.active {
-    color: #C48B54;
-
-    border-bottom-color: #C48B54;
+.navbar-custom .nav-link:hover,
+.navbar-custom .nav-link.active {
+    color: #9C6C3E;
+    border-bottom-color: #9C6C3E;
 }
 
 
-/* ---------- Buttons and sidebar ---------- */
+/* ---------- Buttons ---------- */
 
-.btn-primary {
-    align-self: flex-start;
-
-    display: inline-block;
-
-    background-color: #C48B54;
-    color: #FFFFFF;
-
-    padding: 12px 24px;
-
-    font-size: 1rem;
-    font-weight: 700;
-
-    border: none;
-    border-radius: 5px;
-
-    cursor: pointer;
-    text-align: center;
-
-    transition:
-        background-color 0.3s ease,
-        transform 0.3s ease;
-}
-
-.btn-primary:hover {
+.btn-custom {
     background-color: #9C6C3E;
+    color: #FFFFFF;
+    font-weight: 700;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
 
+.btn-custom:hover {
+    background-color: #704822;
+    color: #FFFFFF;
     transform: translateY(-2px);
 }
 
-.sidebar h2 {
-    font-size: 1.55rem;
+.btn-primary {
+    --bs-btn-bg: #9C6C3E;
+    --bs-btn-border-color: #9C6C3E;
+    --bs-btn-hover-bg: #704822;
+    --bs-btn-hover-border-color: #704822;
+    --bs-btn-active-bg: #5F3C1C;
+    --bs-btn-active-border-color: #5F3C1C;
 }
 
-.sidebar h3 {
-    font-size: 1.1rem;
-
-    margin-top: 28px;
+.btn-secondary {
+    --bs-btn-bg: #2C1E16;
+    --bs-btn-border-color: #2C1E16;
+    --bs-btn-hover-bg: #1A120D;
+    --bs-btn-hover-border-color: #1A120D;
 }
 
-.sidebar-list {
-    padding-left: 18px;
+.btn-outline-secondary {
+    --bs-btn-color: #704822;
+    --bs-btn-border-color: #704822;
+    --bs-btn-hover-bg: #704822;
+    --bs-btn-hover-border-color: #704822;
+    --bs-btn-hover-color: #FFFFFF;
 }
 
-.sidebar-list a:hover,
-.sidebar-link {
+.btn:focus-visible,
+.nav-link:focus-visible,
+.sidebar-link:focus-visible {
+    outline: 3px solid #1A120D;
+    outline-offset: 3px;
+}
+
+
+/* ---------- UI components and sidebar ---------- */
+
+.eyebrow {
     color: #8B592F;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+}
+
+.sidebar-custom {
+    background-color: #EFE5D7;
+    border-radius: 8px;
+}
+
+@media (min-width: 768px) {
+    .sidebar-custom {
+        position: sticky;
+        top: 100px;
+        z-index: 10;
+    }
 }
 
 .sidebar-link {
-    border-bottom:
-        1px solid #8B592F;
-
+    border-bottom: 1px solid #8B592F;
     font-weight: 700;
 }
 
+.sidebar-link:hover {
+    color: #8B592F;
+}
 
-/* ---------- Home hero section ---------- */
-
-.hero-section {
-    min-height: 440px;
-
-    display: grid;
-
-    grid-template-columns:
-        1fr 1fr;
-
+.feature-box {
     background-color: #FFFFFF;
-
-    border-radius: 12px;
-
-    box-shadow:
-        0 8px 25px
-        rgba(44, 30, 22, 0.08);
-
-    margin-bottom: 55px;
-
-    overflow: hidden;
-}
-
-.hero-content {
-    display: flex;
-
-    flex-direction: column;
-
-    justify-content: center;
-    align-items: flex-start;
-
-    padding: 48px;
-}
-
-.hero-img {
-    width: 100%;
-    height: 100%;
-
-    object-fit: cover;
-}
-
-
-/* ---------- Feature list ---------- */
-
-.feature-list {
-    display: grid;
-
-    grid-template-columns:
-        repeat(3, 1fr);
-
-    gap: 18px;
-
-    padding: 0;
-
-    list-style: none;
-}
-
-.feature-list li {
-    background-color: #FFFFFF;
-
-    border-left:
-        4px solid #C48B54;
-
+    border-left: 4px solid #9C6C3E;
     border-radius: 6px;
-
-    padding: 20px;
-
-    margin: 0;
-}
-
-
-/* ---------- Equal-height Flexbox cards ---------- */
-
-.card-row {
-    display: flex;
-
-    align-items: stretch;
-
-    gap: 24px;
-}
-
-.coffee-card {
-    flex: 1 1 0;
-
-    display: flex;
-
-    flex-direction: column;
-
-    background-color: #FFFFFF;
-
-    border-radius: 10px;
-
-    box-shadow:
-        0 4px 14px
-        rgba(44, 30, 22, 0.08);
-
-    overflow: hidden;
-
-    transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease;
-}
-
-.coffee-card:hover {
-    transform: translateY(-7px);
-
-    box-shadow:
-        0 12px 25px
-        rgba(44, 30, 22, 0.16);
-}
-
-.coffee-card img {
-    width: 100%;
-    height: 200px;
-
-    object-fit: cover;
-}
-
-.card-content {
-    flex: 1;
-
-    display: flex;
-
-    flex-direction: column;
-    align-items: flex-start;
-
-    padding: 24px;
-}
-
-.card-content p {
-    flex: 1;
-}
-
-
-/* ---------- Images ---------- */
-
-.feature-img {
-    width: 100%;
-    max-height: 420px;
-
-    object-fit: cover;
-
-    border-radius: 10px;
-
-    margin-bottom: 24px;
-
-    box-shadow:
-        0 4px 12px
-        rgba(44, 30, 22, 0.10);
-}
-
-
-/* ---------- Team cards ---------- */
-
-.team-grid {
-    display: flex;
-
-    align-items: stretch;
-
-    gap: 28px;
-}
-
-.team-card {
-    flex: 1;
-
-    background-color: #FFFFFF;
-
-    padding: 32px;
-
-    border-radius: 10px;
-
-    text-align: center;
-
-    box-shadow:
-        0 4px 12px
-        rgba(44, 30, 22, 0.08);
-
-    transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease;
-}
-
-.team-card:hover {
-    transform: translateY(-5px);
-
-    box-shadow:
-        0 10px 22px
-        rgba(44, 30, 22, 0.14);
+    height: 100%;
 }
 
 .profile-img {
     width: 180px;
     height: 180px;
-
     object-fit: cover;
-
     border-radius: 50%;
-
-    border:
-        4px solid #C48B54;
-
-    margin:
-        0 auto 18px;
+    border: 4px solid #9C6C3E;
+    margin: 0 auto 18px;
 }
 
-.team-card .role {
-    color: #A66C36;
-
-    font-size: 0.85rem;
-    font-weight: 700;
-
-    text-transform: uppercase;
-}
-
-
-/* ---------- Menu table ---------- */
-
-.table-wrapper {
-    overflow-x: auto;
-}
-
-.menu-table {
-    width: 100%;
-
-    border-collapse: collapse;
-
-    background-color: #FFFFFF;
-
-    box-shadow:
-        0 2px 8px
-        rgba(44, 30, 22, 0.08);
-}
-
-.menu-table th,
-.menu-table td {
-    padding: 15px;
-
-    text-align: left;
-
-    border-bottom:
-        1px solid #EBE4DA;
-}
-
-.menu-table th {
+footer {
     background-color: #2C1E16;
     color: #FFFFFF;
-
-    font-family:
-        Georgia,
-        "Times New Roman",
-        serif;
-}
-
-.menu-table tbody tr:hover {
-    background-color: #F1E8DC;
+    text-align: center;
 }
 
 
-/* ---------- CSS Grid image gallery ---------- */
+/* ---------- Responsive carousel ---------- */
 
-.image-gallery {
-    display: grid;
-
-    grid-template-columns:
-        repeat(3, minmax(0, 1fr));
-
-    grid-auto-rows: 230px;
-
-    gap: 18px;
-}
-
-.gallery-item {
-    position: relative;
-
-    margin: 0;
-
-    border-radius: 9px;
-
-    overflow: hidden;
-}
-
-.gallery-item img {
-    width: 100%;
-    height: 100%;
-
+.carousel-image {
+    height: 280px;
     object-fit: cover;
-
-    transition:
-        transform 0.4s ease;
 }
 
-.gallery-item figcaption {
-    position: absolute;
-
-    left: 0;
-    right: 0;
-    bottom: 0;
-
-    background:
-        linear-gradient(
-            transparent,
-            rgba(26, 18, 13, 0.92)
-        );
-
-    color: #FFFFFF;
-
-    font-weight: 700;
-
-    padding: 45px 18px 16px;
-
-    opacity: 0;
-
-    transform: translateY(15px);
-
-    transition:
-        opacity 0.3s ease,
-        transform 0.3s ease;
+@media (min-width: 768px) {
+    .carousel-image {
+        height: 400px;
+    }
 }
 
-.gallery-item:hover img {
-    transform: scale(1.07);
+@media (min-width: 992px) {
+    .carousel-image {
+        height: 500px;
+    }
 }
 
-.gallery-item:hover figcaption {
-    opacity: 1;
-
-    transform: translateY(0);
+@media print {
+    .navbar,
+    .sidebar-custom,
+    #gallery,
+    footer,
+    .btn-group {
+        display: none !important;
+    }
 }
 
 
-/* ---------- Contact page ---------- */
+/* ---------- Media Queries card row ---------- */
 
-.contact-container {
-    display: grid;
-
-    grid-template-columns:
-        1fr 1fr;
-
-    gap: 38px;
+.card-row {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }
 
-.contact-info,
-.contact-form-section {
-    min-width: 0;
-}
-
-#contact-form {
+.coffee-card {
+    display: flex;
+    flex-direction: column;
     background-color: #FFFFFF;
-
-    padding: 30px;
-
     border-radius: 10px;
-
-    box-shadow:
-        0 4px 15px
-        rgba(44, 30, 22, 0.08);
+    box-shadow: 0 4px 14px rgba(44, 30, 22, 0.08);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.form-group {
-    margin-bottom: 20px;
+.coffee-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 25px rgba(44, 30, 22, 0.16);
 }
 
-.form-group label {
-    display: block;
-
-    margin-bottom: 8px;
-
-    font-weight: 700;
-}
-
-.form-group input,
-.form-group select,
-.form-group textarea {
+.coffee-card img {
     width: 100%;
-
-    padding: 12px;
-
-    border:
-        1px solid #D5C9BB;
-
-    border-radius: 5px;
-
-    font: inherit;
-
-    background-color: #FCFAF8;
-
-    transition:
-        border-color 0.3s ease,
-        box-shadow 0.3s ease;
+    height: 200px;
+    object-fit: cover;
 }
 
-.form-group textarea {
-    resize: vertical;
+.card-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
 }
 
-.form-group input:focus,
-.form-group select:focus,
-.form-group textarea:focus {
-    outline: none;
-
-    border-color: #C48B54;
-
-    box-shadow:
-        0 0 0 3px
-        rgba(196, 139, 84, 0.18);
-}
-
-
-/* ---------- Tablet responsive layout ---------- */
-
-@media (max-width: 900px) {
-
-    .page-layout {
-        grid-template-columns: 1fr;
-
-        grid-template-areas:
-            "header"
-            "sidebar"
-            "main"
-            "footer";
-    }
-
-    .sidebar {
-        border-right: none;
-
-        border-bottom:
-            1px solid #E0D2C1;
-
-        padding: 28px 30px;
-    }
-
-    .hero-section,
-    .contact-container {
-        grid-template-columns: 1fr;
-    }
-
-    .hero-img {
-        max-height: 340px;
-    }
-
-    .feature-list,
-    .image-gallery {
-        grid-template-columns:
-            repeat(2, minmax(0, 1fr));
-    }
-
+@media (min-width: 768px) {
     .card-row {
+        flex-direction: row;
         flex-wrap: wrap;
     }
 
     .coffee-card {
-        flex-basis:
-            calc(50% - 12px);
+        flex: 0 0 calc(50% - 12px);
     }
 }
 
-
-/* ---------- Phone responsive layout ---------- */
-
-@media (max-width: 650px) {
-
-    h1 {
-        font-size: 2rem;
-    }
-
-    .nav-container {
-        flex-direction: column;
-
-        align-items: flex-start;
-
-        gap: 8px;
-
-        padding: 15px 0;
-    }
-
-    .nav-menu {
-        width: 100%;
-
-        justify-content: flex-start;
-
-        gap: 18px;
-
-        overflow-x: auto;
-
-        white-space: nowrap;
-    }
-
-    .page-layout > main {
-        padding: 30px 20px;
-    }
-
-    .hero-content {
-        padding: 32px 24px;
-    }
-
-    .feature-list,
-    .image-gallery {
-        grid-template-columns: 1fr;
-    }
-
-    .image-gallery {
-        grid-auto-rows: 250px;
-    }
-
-    .card-row,
-    .team-grid {
-        flex-direction: column;
+@media (min-width: 992px) {
+    .card-row {
+        flex-wrap: nowrap;
     }
 
     .coffee-card {
-        flex-basis: auto;
-    }
-
-    .gallery-item figcaption {
-        opacity: 1;
-
-        transform: none;
+        flex: 1 1 0;
     }
 }
