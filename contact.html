@@ -64,7 +64,7 @@
                         <section class="bg-white p-4 p-lg-5 shadow-sm rounded h-100">
                             <h2 class="mb-4">Send us a Message</h2>
                             
-                            <form id="contact-form" action="#" method="get">
+                            <form id="contact-form" novalidate>
                                 <div class="mb-3">
                                     <label for="name" class="form-label fw-bold">Your Name:</label>
                                     <input type="text" class="form-control" id="name" name="name" placeholder="John Doe" required>
@@ -109,7 +109,17 @@
                                     <label class="form-check-label" for="newsletter">Send me coffee news and special offers</label>
                                 </div>
 
-                                <button type="submit" class="btn btn-primary btn-lg w-100">Send Message</button>
+                                <div class="mb-3">
+                                    <label for="contact-password" class="form-label fw-bold">Password (minimum 8 characters)</label>
+                                    <input type="password" id="contact-password" class="form-control" autocomplete="new-password" required minlength="8">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="contact-confirm" class="form-label fw-bold">Confirm Password</label>
+                                    <input type="password" id="contact-confirm" class="form-control" autocomplete="new-password" required>
+                                </div>
+                                <p class="text-muted small">This is a front-end validation demonstration. Do not use a real password; nothing is sent or stored.</p>
+                                <div id="contact-errors" class="aura-feedback" role="alert" aria-live="polite"></div>
+                                <button type="submit" class="btn btn-primary btn-lg w-100">Validate Message</button>
                             </form>
                         </section>
                     </div>
@@ -126,5 +136,6 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js" defer></script>
 </body>
 </html>

@@ -31,3 +31,22 @@ Responsive four-page coffee shop website created with HTML5, CSS3 and Bootstrap 
 ## Run locally
 
 Open `index.html` in a browser or use the Live Server extension in VS Code.
+
+
+## Assignment 4 — Introduction to JavaScript
+
+Five features have been added to the existing Aura Coffee website:
+
+1. `contact.html`: required-field, email, password-length and confirmation validation.
+2. `about.html`: interactive FAQ accordion with smooth transitions.
+3. `index.html`: popup subscription form, dismissible via X, outside click or Escape.
+4. `menu.html`: background color cycle.
+5. `index.html`: live date and time, updated every second.
+
+JavaScript: `js/script.js`. Additional styling: `css/style.css`.
+Open `index.html` in a browser. Bootstrap requires internet access to load from CDN.
+
+**Important:** Forms demonstrate client-side validation only. No submissions, accounts, or subscriptions are stored or sent. Do not enter a real password. For real account registration, use a secure backend.
+
+### Deployment
+Push the updated project to the existing shared GitHub repository and confirm the GitHub Pages URL. Add that URL and screenshots of all five features to your assignment report.

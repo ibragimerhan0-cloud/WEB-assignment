@@ -298,3 +298,20 @@ footer {
         flex: 1 1 0;
     }
 }
+
+
+/* Assignment 4 JavaScript components */
+.aura-widget {background:#fffaf3;border:1px solid #e5d7c6;border-radius:12px;padding:28px;box-shadow:0 3px 12px rgba(44,30,22,.05)}
+.aura-clock {font-size:clamp(1rem,2vw,1.4rem);font-weight:700;color:#725039}
+.aura-overlay[hidden],.aura-answer[hidden] {display:none!important}
+.aura-overlay {position:fixed;inset:0;background:rgba(0,0,0,.65);z-index:2000;display:flex;align-items:center;justify-content:center;padding:18px}
+.aura-modal {position:relative;background:#fffaf3;border-radius:12px;padding:30px;width:min(100%,440px);max-height:90vh;overflow:auto;box-shadow:0 12px 35px #0003}
+.aura-close {position:absolute;right:14px;top:7px;background:none;border:0;font-size:30px;color:#503727;cursor:pointer}
+.aura-question {display:flex;justify-content:space-between;align-items:center;gap:12px;width:100%;padding:16px;text-align:left;border:0;border-bottom:1px solid #decdb8;background:transparent;color:#503727;font-weight:700;cursor:pointer}
+.aura-question:hover,.aura-question[aria-expanded="true"] {background:#f5eadd}
+.aura-answer {padding:0 16px;overflow:hidden;max-height:0;opacity:0;transition:max-height .3s ease,opacity .3s ease,padding .3s ease}
+.aura-answer.is-open {max-height:220px;opacity:1;padding:14px 16px}
+.aura-answer p {margin:0}
+.aura-feedback {margin-bottom:12px}
+.aura-error {color:#a21d19}.aura-success {color:#23683a}
+@media(prefers-reduced-motion:reduce){.aura-answer{transition:none}}
