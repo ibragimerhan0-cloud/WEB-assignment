@@ -1,0 +1,50 @@
+/* ---------- Assignment 5 additions (no inline styles in HTML) ---------- */
+.story-img {
+    max-height: 400px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.menu-hero-img {
+    max-height: 350px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.shop-img {
+    max-height: 250px;
+    object-fit: cover;
+}
+
+.hero-img {
+    min-height: 300px;
+    object-fit: cover;
+}
+
+.team-role {
+    font-size: 0.85rem;
+}
+
+.menu-item-img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.menu-item-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.rating-text {
+    display: block;
+    margin-top: 8px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #8B592F;
+}
+
+/* Active filter button (overrides Bootstrap button variables) */
+.filter-btn.active {
+    --bs-btn-bg: #704822;
+    --bs-btn-border-color: #704822;
+    --bs-btn-color: #FFFFFF;
+}

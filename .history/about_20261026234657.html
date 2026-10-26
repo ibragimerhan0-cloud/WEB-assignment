@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Aura Coffee Roasters</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-custom sticky-top py-3">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Aura Coffee</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav gap-lg-3 align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                    <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+                        <button type="button" class="btn btn-outline-secondary btn-sm" id="theme-toggle-btn">Dark Mode</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid my-4">
+        <div class="row g-4">
+            
+            <aside class="col-lg-3 col-md-4">
+                <div class="sidebar-custom p-4">
+                    <h2>Our Values</h2>
+                    <ul class="sidebar-list mb-4">
+                        <li>Fresh local roasting</li>
+                        <li>Ethically sourced beans</li>
+                        <li>Friendly service</li>
+                        <li>Student community</li>
+                    </ul>
+                    <a href="menu.html" class="btn btn-outline-secondary btn-sm">Taste our coffee</a>
+                </div>
+            </aside>
+
+            <main class="col-lg-9 col-md-8">
+                
+                <section class="mb-5 bg-white p-4 p-lg-5 shadow-sm rounded">
+                    <p class="eyebrow">From students to roasters</p>
+                    <h1 class="mb-4">Our Story</h1>
+                    <img src="images/roastery.jpg" alt="Fresh coffee beans" class="img-fluid rounded mb-4 about-img">
+                    <p>
+                        Aura Coffee Roasters was born out of a late-night study session. As university students navigating through complex coding assignments, we realized how crucial a good cup of coffee was. Disappointed by the lack of authentic, specialty coffee shops near our campus in Astana, we decided to learn the art of roasting ourselves.
+                    </p>
+                    <p class="mb-0">
+                        Today, Aura is more than just a cafe. It's a community hub where ideas are born, friendships are forged, and every cup is crafted with precision and passion.
+                    </p>
+                </section>
+
+                <section class="mb-5">
+                    <div class="mb-4 text-center">
+                        <p class="eyebrow">The people behind Aura</p>
+                        <h2>About the Team Members</h2>
+                    </div>
+
+                    <div class="row g-4">
+                        <article class="col-md-6 text-center">
+                            <div class="bg-white p-4 shadow-sm rounded h-100">
+                                <img src="images/madi.jpg" alt="Portrait of Shalabay Madi" class="profile-img">
+                                <h3>Shalabay Madi</h3>
+                                <p class="role-text mb-3 text-uppercase fw-bold text-muted">Co-Founder &amp; Head Roaster</p>
+                                <p class="mb-0">Madi approaches coffee roasting like writing perfect code - it requires patience, precise temperatures, and constant testing. He sources all our beans directly from ethical farms.</p>
+                            </div>
+                        </article>
+
+                        <article class="col-md-6 text-center">
+                            <div class="bg-white p-4 shadow-sm rounded h-100">
+                                <img src="images/yerkhan.jpg" alt="Portrait of Ibragim Yerkhan" class="profile-img">
+                                <h3>Ibragim Yerkhan</h3>
+                                <p class="role-text mb-3 text-uppercase fw-bold text-muted">Co-Founder &amp; Chief Barista</p>
+                                <p class="mb-0">Yerkhan ensures the quality of every beverage that crosses the counter. A master of latte art and customer experience, he makes sure everyone leaves with a smile.</p>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="aura-widget mb-5">
+                    <h2>Frequently Asked Questions</h2>
+                    <div class="aura-faq">
+                        <button type="button" class="aura-question" aria-controls="faq1">Where is Aura Coffee located? <span>+</span></button>
+                        <div class="aura-answer" id="faq1" hidden><p>We are based in Astana, Kazakhstan. Contact us for location details.</p></div>
+                        <button type="button" class="aura-question" aria-controls="faq2">What are your opening hours? <span>+</span></button>
+                        <div class="aura-answer" id="faq2" hidden><p>We are open every day from 8:00 AM to 10:00 PM.</p></div>
+                        <button type="button" class="aura-question" aria-controls="faq3">Do you offer specialty coffee? <span>+</span></button>
+                        <div class="aura-answer" id="faq3" hidden><p>Yes! Explore our espresso classics and seasonal drinks on the Menu page.</p></div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <footer class="py-4 mt-auto">
+        <div class="container-fluid">
+            <p class="mb-0">&copy; 2026 Aura Coffee Roasters. Team Members: Shalabay Madi, Ibragim Yerkhan | Group: SE-2510</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js" defer></script>
+</body>
+</html>

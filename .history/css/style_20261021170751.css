@@ -1,0 +1,317 @@
+/* ---------- Basic styles ---------- */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Open Sans", Arial, sans-serif;
+    background-color: #F9F6F0;
+    color: #2C1E16;
+    margin: 0;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    color: #1A120D;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+
+/* ---------- Responsive typography ---------- */
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 2.3rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-size: 1.05rem;
+    }
+}
+
+@media (min-width: 992px) {
+    h1 {
+        font-size: 2.6rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+    }
+}
+
+
+/* ---------- Navigation bar ---------- */
+
+.navbar-custom {
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 10px rgba(44, 30, 22, 0.08);
+}
+
+.navbar-custom .navbar-brand {
+    color: #9C6C3E;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.55rem;
+    font-weight: 700;
+}
+
+.navbar-custom .nav-link {
+    font-weight: 600;
+    color: #2C1E16;
+    border-bottom: 2px solid transparent;
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.navbar-custom .nav-link:hover,
+.navbar-custom .nav-link.active {
+    color: #9C6C3E;
+    border-bottom-color: #9C6C3E;
+}
+
+
+/* ---------- Buttons ---------- */
+
+.btn-custom {
+    background-color: #9C6C3E;
+    color: #FFFFFF;
+    font-weight: 700;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: #704822;
+    color: #FFFFFF;
+    transform: translateY(-2px);
+}
+
+.btn-primary {
+    --bs-btn-bg: #9C6C3E;
+    --bs-btn-border-color: #9C6C3E;
+    --bs-btn-hover-bg: #704822;
+    --bs-btn-hover-border-color: #704822;
+    --bs-btn-active-bg: #5F3C1C;
+    --bs-btn-active-border-color: #5F3C1C;
+}
+
+.btn-secondary {
+    --bs-btn-bg: #2C1E16;
+    --bs-btn-border-color: #2C1E16;
+    --bs-btn-hover-bg: #1A120D;
+    --bs-btn-hover-border-color: #1A120D;
+}
+
+.btn-outline-secondary {
+    --bs-btn-color: #704822;
+    --bs-btn-border-color: #704822;
+    --bs-btn-hover-bg: #704822;
+    --bs-btn-hover-border-color: #704822;
+    --bs-btn-hover-color: #FFFFFF;
+}
+
+.btn:focus-visible,
+.nav-link:focus-visible,
+.sidebar-link:focus-visible {
+    outline: 3px solid #1A120D;
+    outline-offset: 3px;
+}
+
+
+/* ---------- UI components and sidebar ---------- */
+
+.eyebrow {
+    color: #8B592F;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+}
+
+.sidebar-custom {
+    background-color: #EFE5D7;
+    border-radius: 8px;
+}
+
+@media (min-width: 768px) {
+    .sidebar-custom {
+        position: sticky;
+        top: 100px;
+        z-index: 10;
+    }
+}
+
+.sidebar-link {
+    border-bottom: 1px solid #8B592F;
+    font-weight: 700;
+}
+
+.sidebar-link:hover {
+    color: #8B592F;
+}
+
+.feature-box {
+    background-color: #FFFFFF;
+    border-left: 4px solid #9C6C3E;
+    border-radius: 6px;
+    height: 100%;
+}
+
+.profile-img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #9C6C3E;
+    margin: 0 auto 18px;
+}
+
+footer {
+    background-color: #2C1E16;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+
+/* ---------- Responsive carousel ---------- */
+
+.carousel-image {
+    height: 280px;
+    object-fit: cover;
+}
+
+@media (min-width: 768px) {
+    .carousel-image {
+        height: 400px;
+    }
+}
+
+@media (min-width: 992px) {
+    .carousel-image {
+        height: 500px;
+    }
+}
+
+@media print {
+    .navbar,
+    .sidebar-custom,
+    #gallery,
+    footer,
+    .btn-group {
+        display: none !important;
+    }
+}
+
+
+/* ---------- Media Queries card row ---------- */
+
+.card-row {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.coffee-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 4px 14px rgba(44, 30, 22, 0.08);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.coffee-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 25px rgba(44, 30, 22, 0.16);
+}
+
+.coffee-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+}
+
+@media (min-width: 768px) {
+    .card-row {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .coffee-card {
+        flex: 0 0 calc(50% - 12px);
+    }
+}
+
+@media (min-width: 992px) {
+    .card-row {
+        flex-wrap: nowrap;
+    }
+
+    .coffee-card {
+        flex: 1 1 0;
+    }
+}
+
+
+/* Assignment 4 JavaScript components */
+.aura-widget {background:#fffaf3;border:1px solid #e5d7c6;border-radius:12px;padding:28px;box-shadow:0 3px 12px rgba(44,30,22,.05)}
+.aura-clock {font-size:clamp(1rem,2vw,1.4rem);font-weight:700;color:#725039}
+.aura-overlay[hidden],.aura-answer[hidden] {display:none!important}
+.aura-overlay {position:fixed;inset:0;background:rgba(0,0,0,.65);z-index:2000;display:flex;align-items:center;justify-content:center;padding:18px}
+.aura-modal {position:relative;background:#fffaf3;border-radius:12px;padding:30px;width:min(100%,440px);max-height:90vh;overflow:auto;box-shadow:0 12px 35px #0003}
+.aura-close {position:absolute;right:14px;top:7px;background:none;border:0;font-size:30px;color:#503727;cursor:pointer}
+.aura-question {display:flex;justify-content:space-between;align-items:center;gap:12px;width:100%;padding:16px;text-align:left;border:0;border-bottom:1px solid #decdb8;background:transparent;color:#503727;font-weight:700;cursor:pointer}
+.aura-question:hover,.aura-question[aria-expanded="true"] {background:#f5eadd}
+.aura-answer {padding:0 16px;overflow:hidden;max-height:0;opacity:0;transition:max-height .3s ease,opacity .3s ease,padding .3s ease}
+.aura-answer.is-open {max-height:220px;opacity:1;padding:14px 16px}
+.aura-answer p {margin:0}
+.aura-feedback {margin-bottom:12px}
+.aura-error {color:#a21d19}.aura-success {color:#23683a}
+@media(prefers-reduced-motion:reduce){.aura-answer{transition:none}}
