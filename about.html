@@ -6,9 +6,16 @@
     <title>About Us - Aura Coffee Roasters</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <!-- Task 0: jQuery must load before our own script. -->
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js" defer></script>
+    <script src="js/script.js" defer></script>
 </head>
 
 <body>
+    <!-- Task 4: reading progress. -->
+    <div class="scroll-progress" aria-hidden="true"><div id="scroll-progress-bar"></div></div>
+    <!-- Task 7: shared notification area. -->
+    <div id="aura-toast" class="aura-toast" role="status" aria-live="polite"></div>
 
     <nav class="navbar navbar-expand-lg navbar-custom sticky-top py-3">
         <div class="container-fluid">
@@ -69,7 +76,7 @@
                     <div class="row g-4">
                         <article class="col-md-6 text-center">
                             <div class="bg-white p-4 shadow-sm rounded h-100">
-                                <img src="images/madi.jpg" alt="Portrait of Shalabay Madi" class="profile-img">
+                                <img src="images/placeholder.svg" data-src="images/madi.jpg" alt="Portrait of Shalabay Madi" class="lazy-image profile-img">
                                 <h3>Shalabay Madi</h3>
                                 <p class="role-text mb-3 text-uppercase fw-bold text-muted">Co-Founder &amp; Head Roaster</p>
                                 <p class="mb-0">Madi approaches coffee roasting like writing perfect code - it requires patience, precise temperatures, and constant testing. He sources all our beans directly from ethical farms.</p>
@@ -78,7 +85,7 @@
 
                         <article class="col-md-6 text-center">
                             <div class="bg-white p-4 shadow-sm rounded h-100">
-                                <img src="images/yerkhan.jpg" alt="Portrait of Ibragim Yerkhan" class="profile-img">
+                                <img src="images/placeholder.svg" data-src="images/yerkhan.jpg" alt="Portrait of Ibragim Yerkhan" class="lazy-image profile-img">
                                 <h3>Ibragim Yerkhan</h3>
                                 <p class="role-text mb-3 text-uppercase fw-bold text-muted">Co-Founder &amp; Chief Barista</p>
                                 <p class="mb-0">Yerkhan ensures the quality of every beverage that crosses the counter. A master of latte art and customer experience, he makes sure everyone leaves with a smile.</p>
@@ -89,13 +96,17 @@
 
                 <section class="aura-widget mb-5">
                     <h2>Frequently Asked Questions</h2>
+                    <!-- Task 3: highlight every match in the FAQ questions and answers. -->
+                    <label for="faq-search" class="form-label fw-bold">Find a word in our FAQ</label>
+                    <input type="search" id="faq-search" class="form-control mb-3" placeholder="Try coffee, Astana or open">
+                    <p id="faq-search-status" class="small text-muted" role="status"></p>
                     <div class="aura-faq">
-                        <button type="button" class="aura-question" aria-controls="faq1">Where is Aura Coffee located? <span>+</span></button>
-                        <div class="aura-answer" id="faq1" hidden><p>We are based in Astana, Kazakhstan. Contact us for location details.</p></div>
-                        <button type="button" class="aura-question" aria-controls="faq2">What are your opening hours? <span>+</span></button>
-                        <div class="aura-answer" id="faq2" hidden><p>We are open every day from 8:00 AM to 10:00 PM.</p></div>
-                        <button type="button" class="aura-question" aria-controls="faq3">Do you offer specialty coffee? <span>+</span></button>
-                        <div class="aura-answer" id="faq3" hidden><p>Yes! Explore our espresso classics and seasonal drinks on the Menu page.</p></div>
+                        <button type="button" class="aura-question" aria-controls="faq1" aria-expanded="false"><span class="faq-text">Where is Aura Coffee located?</span> <span class="faq-icon" aria-hidden="true">+</span></button>
+                        <div class="aura-answer" id="faq1" hidden><p class="faq-text">We are based in Astana, Kazakhstan. Contact us for location details.</p></div>
+                        <button type="button" class="aura-question" aria-controls="faq2" aria-expanded="false"><span class="faq-text">What are your opening hours?</span> <span class="faq-icon" aria-hidden="true">+</span></button>
+                        <div class="aura-answer" id="faq2" hidden><p class="faq-text">We are open every day from 8:00 AM to 10:00 PM.</p></div>
+                        <button type="button" class="aura-question" aria-controls="faq3" aria-expanded="false"><span class="faq-text">Do you offer specialty coffee?</span> <span class="faq-icon" aria-hidden="true">+</span></button>
+                        <div class="aura-answer" id="faq3" hidden><p class="faq-text">Yes! Explore our espresso classics and seasonal drinks on the Menu page.</p></div>
                     </div>
                 </section>
             </main>
@@ -109,6 +120,5 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/script.js" defer></script>
 </body>
 </html>
